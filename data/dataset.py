@@ -4,7 +4,7 @@ from typing import *
 from PIL import Image
 import re
 import numpy as np
-from utilities import show_bbox
+from utils import show_bbox
 import torch
 from torchvision import transforms as T
 
@@ -41,14 +41,14 @@ class CWiderFace(Dataset):
             bbox[:,3] = bbox[:,3]*scale_y
         return img, bbox
 
-def main():
-    tf_img = T.Compose([
-        T.PILToTensor(),
-        T.Resize((448,448))
-    ])
-    dataset = CWiderFace("/home/essea/repos/Yolo/data/dataset/train.csv",transform_img=tf_img)
-    img, bbox = dataset[48]
-    show_bbox(img, bbox, width=1).show()
+# def main():
+#     tf_img = T.Compose([
+#         T.PILToTensor(),
+#         T.Resize((448,448))
+#     ])
+#     dataset = CWiderFace("/home/essea/repos/Yolo/data/dataset/train.csv",transform_img=tf_img)
+#     img, bbox = dataset[48]
+#     show_bbox(img, bbox, width=1).show()
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
