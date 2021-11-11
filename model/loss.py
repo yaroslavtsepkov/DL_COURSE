@@ -13,9 +13,6 @@ def intersection_over_union(boxes_preds, boxes_labels, box_format="midpoint"):
         tensor: Intersection over union for all examples
     """
 
-    # Slicing idx:idx+1 in order to keep tensor dimensionality
-    # Doing ... in indexing if there would be additional dimensions
-    # Like for Yolo algorithm which would have (N, S, S, 4) in shape
     if box_format == "midpoint":
         box1_x1 = boxes_preds[..., 0:1] - boxes_preds[..., 2:3] / 2
         box1_y1 = boxes_preds[..., 1:2] - boxes_preds[..., 3:4] / 2
