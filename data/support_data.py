@@ -1,4 +1,3 @@
-from typing import *
 from torchvision.transforms.functional import adjust_sharpness
 from torchvision.utils import draw_bounding_boxes
 from torchvision import transforms as T
@@ -26,3 +25,6 @@ def converter(bbox: torch.Tensor)->torch.Tensor:
     new_bbox[:, :2] = bbox[:, :2]
     new_bbox[:, 2:] = bbox[:, :2] + bbox[:, 2:]
     return new_bbox
+
+if __name__ == '__main__':
+    pass

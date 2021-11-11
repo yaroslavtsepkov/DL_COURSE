@@ -1,10 +1,9 @@
 from torch.utils.data import Dataset
 import pandas as pd
-from typing import *
 from PIL import Image
 import re
 import numpy as np
-from utils import show_bbox
+from support_data import show_bbox
 import torch
 from torchvision import transforms as T
 
@@ -50,5 +49,5 @@ class CWiderFace(Dataset):
 #     img, bbox = dataset[48]
 #     show_bbox(img, bbox, width=1).show()
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    pass
