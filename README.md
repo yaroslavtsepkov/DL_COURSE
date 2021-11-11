@@ -2,6 +2,7 @@
 
 Dataset: [WIDERFACE](http://shuoyang1213.me/WIDERFACE/)
 
-Task:
-
-* [Laboratory work 1](https://docs.google.com/document/d/1MzdbmrhabHUIb5-I-WGi_PSe_8J25_utfKjmfKUtfAc/edit)
+Branches:
+* [Faster RCNN](https://github.com/yaroslavtsepkov/DL_COURSE/tree/faster-rcnn)
+* [Retinanet](https://github.com/yaroslavtsepkov/DL_COURSE/tree/retinanet)
+* [Yolo](https://github.com/yaroslavtsepkov/DL_COURSE/tree/yolov1-implemenation)
